@@ -63,7 +63,7 @@ function Convertidor({ valor }) {
         <div className="col-12">
           <img
             className="col-12 mt-4 rounded mx-auto d-block img"
-            src="../public/imagenes/dolar.jpg"
+            src="../public/imagenes/dolar.png"
             alt="dolarlogo"
           />
         </div>
