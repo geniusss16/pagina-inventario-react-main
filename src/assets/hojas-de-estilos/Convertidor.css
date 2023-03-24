@@ -1,0 +1,50 @@
+.img{
+ /* border: solid 1px black ;  */
+ transition: 0.3;
+ width: 240px;
+}
+
+.titi{
+ background-color: aqua;
+}
+
+.tete{
+background-color: rgb(85, 228, 161);  
+   }
+
+.colorgry{
+ color: #666666      
+}
+
+
+.text-right{ 
+ text-align: end;
+ 
+margin: 0;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+       
+               
+           
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
