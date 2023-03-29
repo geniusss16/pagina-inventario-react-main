@@ -3,6 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "../hojas-de-estilos/Convertidor.css";
 
+
 function Convertidor({ valor }) {
   const [dolartoday, setDolartoday] = useState(0);
   const [dolarBcv, setDolarBcv] = useState(0);
@@ -63,7 +64,7 @@ function Convertidor({ valor }) {
         <div className="col-12">
           <img
             className="col-12 mt-4 rounded mx-auto d-block img"
-            src="/public/imagenes/logodolar.PNG"
+            src="/imagenes/logodolar.PNG"
             alt="dolarlogo"
           />
         </div>

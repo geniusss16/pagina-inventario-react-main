@@ -8,7 +8,7 @@ function Navbar() {
           <div className="offcanvas-header">
             <a className="navbar-brand  m-0" href="#">
               <img
-                src={"./imagenes/tienda.PNG"}
+                src={"/public/imagenes/tienda.PNG"}
                 alt={"tinda"}
                 width="45"
                 height="35"
