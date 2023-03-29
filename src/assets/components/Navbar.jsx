@@ -8,7 +8,7 @@ function Navbar() {
           <div className="offcanvas-header">
             <a className="navbar-brand  m-0" href="#">
               <img
-                src={"/public/imagenes/tienda.PNG"}
+                src={"/imagenes/tienda.PNG"}
                 alt={"tinda"}
                 width="45"
                 height="35"
@@ -61,7 +61,7 @@ function Navbar() {
         <a className="navbar-brand p-2 m-0" href="#">
           {/* <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"/> */}
           <img
-            src={"./imagenes/tienda.PNG"}
+            src={"/imagenes/tienda.PNG"}
             alt={"tinda"}
             width="45"
             height="35"
