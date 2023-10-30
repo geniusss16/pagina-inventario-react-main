@@ -6,16 +6,32 @@ function Api() {
   const [dataApi, setDataApi] = useState(null);
   const [loading, setLoading] = useState(true); // agregamos un estado para controlar el spinner
 
+  const [dataApi2, setDataApi2] = useState(null);
+  //const [loading2, setLoading2] = useState(true); // agregamos un estado para controlar el spinner
+
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("https://s3.amazonaws.com/dolartoday/data.json");
+
+      const response = await fetch("https://pydolarvenezuela-api.vercel.app/api/v1/dollar/");
       const data = await response.json();
-      setDataApi(data); // actualizamos dataApi con la respuesta de la API
+
+      const response2 = await fetch("https://pydolarvenezuela-api.vercel.app/api/v1/dollar/page?page=bcv");
+      const data2 = await response2.json();
+
+      
+      console.log(data2);
+  
+      if (data !== undefined && data !== null && data2 !== undefined && data2 !== null) {
+        setDataApi(data); // actualizamos dataApi con la respuesta de la API
+        setDataApi2(data2); // actualizamos dataApi con la respuesta de la API
+
+
 
       setTimeout(() => {
         setLoading(false); // ocultamos el spinner después de 1 segundo
       },1000);
     }
+  }
 
     fetchData();
   }, []);
@@ -28,11 +44,11 @@ function Api() {
         </div>
       </div>
     );
-  }
+  } 
 
   return (
     <div>
-      <Convertidor valor={dataApi} />
+      <Convertidor valor={dataApi} valor2= {dataApi2} />
     </div>
   );
 }

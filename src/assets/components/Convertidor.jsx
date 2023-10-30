@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import "../hojas-de-estilos/Convertidor.css";
 
 
-function Convertidor({ valor }) {
+function Convertidor({ valor , valor2 }) {
+  //console.log(valor2.monitors.usd.price_old);
   const [dolartoday, setDolartoday] = useState(0);
   const [dolarBcv, setDolarBcv] = useState(0);
   const [valorDelSelector, setvalorDelSelector] = useState(0);
@@ -17,10 +18,10 @@ function Convertidor({ valor }) {
   );
 
   useEffect(() => {
-    const { dolartoday: valorD, promedio_real } = valor.USD;
-    setvalorDelSelector(valorD);
-    setDolartoday(valorD);
-    setDolarBcv(promedio_real);
+    //const { dolartoday: valorD, promedio_real } = valor.USD;
+    setvalorDelSelector(valor.monitors.dolar_today.price);
+    setDolartoday(valor.monitors.dolar_today.price);
+    setDolarBcv(valor2.monitors.usd.price_old);
   }, []);
 
   useEffect(() => {
