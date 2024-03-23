@@ -12,7 +12,7 @@ function Api() {
   useEffect(() => {
     async function fetchData() {
 
-      const response = await fetch("https://pydolarvenezuela-api.vercel.app/api/v1/dollar/");
+      const response = await fetch("https://pydolarvenezuela-api.vercel.app/api/v1/dollar");
       const data = await response.json();
 
       const response2 = await fetch("https://pydolarvenezuela-api.vercel.app/api/v1/dollar/page?page=bcv");
