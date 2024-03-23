@@ -15,7 +15,7 @@ function Api() {
       const response = await fetch("https://pydolarvenezuela-api.vercel.app/api/v1/dollar");
       const data = await response.json();
 
-      const response2 = await fetch("https://pydolarvenezuela-api.vercel.app/api/v1/dollar/page?page=bcv");
+      const response2 = await fetch("https://pydolarvenezuela-api.vercel.app/api/v1/dollar?page=bcv");
       const data2 = await response2.json();
 
       
