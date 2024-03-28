@@ -72,12 +72,12 @@ function Convertidor({ valor , valor2 }) {
       </div>
 
       <div className="row">
-        <div className="col-12 d-flex justify-content-center">
+        <div className="col-12 col-sm-12 d-flex justify-content-center">
           <select
             name="sel1"
             id="sellist1"
             onChange={handleChangeSelector}
-            className="form-select mt-4 w-25"
+            className="form-select mt-4 w-50"
           >
             <option value={dolartoday}>DOLARTODAY</option>
             <option value={dolarBcv}>BCV</option>
@@ -87,12 +87,12 @@ function Convertidor({ valor , valor2 }) {
       </div>
 
       <div className="row">
-        <div className="col-12 d-flex justify-content-center">
+        <div className="col-12  d-flex justify-content-center">
           <select
             name="sel2"
             id="sellist2"
             onChange={handleSelect2}
-            className="col-12 form-select mt-4 w-25"
+            className="col-12 form-select mt-4 w-50"
           >
             <option value="USD">USD</option>
             <option value="BS">BS</option>
@@ -108,7 +108,7 @@ function Convertidor({ valor , valor2 }) {
         <div className="col-12 d-flex justify-content-center">
           <input
             type="number"
-            className="form-control w-25 text-right"
+            className="form-control w-50 text-right"
             id="input1"
             name="input1"
             onChange={handleChangeMonto}
@@ -124,10 +124,10 @@ function Convertidor({ valor , valor2 }) {
       </div>
 
       <div className="row">
-        <div className="col-12 d-flex  mb-3 justify-content-center">
+        <div className="col-12 col-sm-12 d-flex   justify-content-center">
           <button
             type="button"
-            className="btn btn-success  col-2"
+            className="btn btn-success"
             onClick={reiniciarBT}
           >
             Limpiar
